@@ -32,17 +32,17 @@ import Resume from './components/resume.jsx';
 
 
 
-ReactDOM.render(
-    <React.Fragment>
-        <Navbar />
-        <Intro />
-        <About />
-        <Portfolio />
-        <Contact />
-        <BackToTop />
-        <Preloader />
-    </React.Fragment>,
-document.getElementById('root'));
+// ReactDOM.render(
+//     <React.Fragment>
+//         <Navbar />
+//         <Intro />
+//         <About />
+//         <Portfolio />
+//         <Contact />
+//         <BackToTop />
+//         <Preloader />
+//     </React.Fragment>,
+// document.getElementById('root'));
 // ReactDOM.render(
 //     <Router>
 //       <Switch>
@@ -53,27 +53,27 @@ document.getElementById('root'));
 //     document.getElementById('root')
 //   );
 
-// const HomePage = () => (
-//     <React.Fragment>
-//          <Navbar />
-//          <Intro />
-//          <About />
-//          <Portfolio />
-//          <Contact />
-//          <BackToTop />
-//          <Preloader />
-//      </React.Fragment>
-//   );
+const HomePage = () => (
+    <React.Fragment>
+         <Navbar />
+         <Intro />
+         <About />
+         <Portfolio />
+         <Contact />
+         <BackToTop />
+         <Preloader />
+     </React.Fragment>
+  );
   
-//   ReactDOM.render(
-//     <Router>
-//     <Routes>
-//       <Route path="/" element={<HomePage />} />
-//       <Route path="/resume" element={<Resume />} />
-//     </Routes>
-//   </Router>,
-//   document.getElementById('root')
-//   );
+  ReactDOM.render(
+    <Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/resume" element={<Resume />} />
+    </Routes>
+  </Router>,
+  document.getElementById('root')
+  );
 
 
 // If you want your app to work offline and load faster, you can change
