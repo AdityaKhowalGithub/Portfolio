@@ -28,7 +28,7 @@ import Portfolio from './components/portfolio.jsx';
 import Contact from './components/contact.jsx';
 import BackToTop from './components/back-top.jsx';
 import Preloader from './components/preloader';
-import Resume from './components/resume.jsx';
+import PDFViewer from './components/resume.jsx';
 
 
 
@@ -69,7 +69,7 @@ const HomePage = () => (
     <Router>
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/resume" element={<Resume />} />
+      <Route path="/resume" element={<PDFViewer />} />
     </Routes>
   </Router>,
   document.getElementById('root')

@@ -47,7 +47,7 @@ class About extends React.Component {
                     </div>
                     <div className="skill-mf">
                       <div className="image">
-                      <img src={myImage} alt="selfie" class="pfp" />
+                      <img className="pfp"src={myImage} alt="selfie" />
                       </div>
   
                     </div>
