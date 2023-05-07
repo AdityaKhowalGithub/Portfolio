@@ -1,6 +1,6 @@
 {
   "homepage": "https://adityakhowalgithub.github.io/website",
-  "name": "portfolio",
+  "name": "website",
   "version": "0.1.0",
   "dependencies": {
     "bootstrap": "^4.3.1",
