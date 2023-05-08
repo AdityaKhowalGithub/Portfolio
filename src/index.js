@@ -29,6 +29,7 @@ import Contact from './components/contact.jsx';
 import BackToTop from './components/back-top.jsx';
 import Preloader from './components/preloader';
 import PDFViewer from './components/resume.jsx';
+import Home from './components/home.jsx';
 
 
 
@@ -57,6 +58,7 @@ const HomePage = () => (
     <React.Fragment>
          <Navbar />
          <Intro />
+         <Home />
          <About />
          <Portfolio />
          <Contact />
