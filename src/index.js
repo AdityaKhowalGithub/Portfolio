@@ -56,7 +56,7 @@ import Home from './components/home.jsx';
 
 const HomePage = () => (
     <React.Fragment>
-         <Navbar />
+        <Navbar />
          <Intro />
          <Home />
          <About />
@@ -66,15 +66,20 @@ const HomePage = () => (
          <Preloader />
      </React.Fragment>
   );
+const ResumePage = () => (
+    <React.Fragment>
+      <PDFViewer />
+    </React.Fragment>
+  );
   
   ReactDOM.render(
     <Router>
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/resume" element={<PDFViewer />} />
-    </Routes>
-  </Router>,
-  document.getElementById('root')
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/resume" element={<ResumePage />} />
+      </Routes>
+    </Router>,
+    document.getElementById('root')
   );
 
 

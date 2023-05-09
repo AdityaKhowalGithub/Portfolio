@@ -117,7 +117,7 @@ class Portfolio extends React.Component {
                 
               </div>
             </div>
-            <div className="col-md-4">
+            {/* <div className="col-md-4">
               <div className="work-box">
                 <a href="https://github.com/adityakhowalgithub" >
                   <div className="work-img">
@@ -160,7 +160,7 @@ class Portfolio extends React.Component {
                 </a>
   
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

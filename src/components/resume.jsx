@@ -19,6 +19,7 @@ const PDFViewer = () => {
                 <iframe
                     src={`${pdfURL}#toolbar=0`}
                     className="pdf"
+                    title="Resume PDF"
                 />
             </div>
         </>

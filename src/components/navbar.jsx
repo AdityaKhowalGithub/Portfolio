@@ -1,5 +1,6 @@
 import React from "react";
 import $ from "jquery";
+import { Link } from 'react-router-dom'
 
 
 
@@ -121,9 +122,12 @@ class Navbar extends React.Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="https://adityakhowalgithub.github.io/website/ResumeMarch5.pdf">
-                  resume
+                <a className="nav-link js-scroll" href="/resume">
+                  Resume
                 </a>
+                {/* <Link className="nav-link js-scroll" to={"./resume"}>
+                Dashboard
+              </Link> */}
               </li>
             </ul>
           </div>
