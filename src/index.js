@@ -31,7 +31,7 @@ import Preloader from './components/preloader';
 import PDFViewer from './components/resume.jsx';
 import Home from './components/home.jsx';
 
-
+import ToastNotification from './components/ToastNotification.jsx';
 
 // ReactDOM.render(
 //     <React.Fragment>
@@ -60,10 +60,11 @@ const HomePage = () => (
          <Intro />
          <Home />
          <About />
-         <Portfolio />
-         <Contact />
+         <Portfolio id="work" />
+         <Contact id="contact" />
          <BackToTop />
          <Preloader />
+          <ToastNotification />
      </React.Fragment>
   );
 const ResumePage = () => (

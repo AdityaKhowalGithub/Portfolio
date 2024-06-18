@@ -1,15 +1,9 @@
 import React from "react";
 import $ from "jquery";
-import { Link } from 'react-router-dom'
-import {resume} from "./PDF/Aditya_khowal_resume.pdf";
-
-
+import { Link } from 'react-router-dom';
+import { resume } from "./PDF/Aditya_khowal_resume.pdf";
 
 class Navbar extends React.Component {
-  constructor() {
-    super();
-  }
-
   componentDidMount() {
     const nav = $("nav");
     let navHeight = nav.outerHeight();
@@ -20,54 +14,33 @@ class Navbar extends React.Component {
       }
     });
 
-    $("body").scrollspy({
-      target: "#mainNav",
-      offset: navHeight
-    });
-
-    $(".js-scroll").on("click", function() {
-      $(".navbar-collapse").collapse("hide");
-    });
-
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 50) {
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.add("navbar-reduce");
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.remove("navbar-trans");
-        
+        document.querySelector(".navbar-expand-md").classList.add("navbar-reduce");
+        document.querySelector(".navbar-expand-md").classList.remove("navbar-trans");
       } else {
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.add("navbar-trans");
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.remove("navbar-reduce");
-        
+        document.querySelector(".navbar-expand-md").classList.add("navbar-trans");
+        document.querySelector(".navbar-expand-md").classList.remove("navbar-reduce");
       }
     });
 
-    $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
+    $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function(e) {
+      e.preventDefault();
       if (
         window.location.pathname.replace(/^\//, "") ===
           this.pathname.replace(/^\//, "") &&
         window.location.hostname === this.hostname
       ) {
-        var target = $(this.hash);
-        target = target.length
-          ? target
-          : $("[name=" + this.hash.slice(1) + "]");
-        if (target.length) {
+        const target = $(this.hash);
+        const targetElement = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+        if (targetElement.length) {
           $("html, body").animate(
             {
-              scrollTop: target.offset().top - navHeight + 5
+              scrollTop: targetElement.offset().top - navHeight + 5
             },
             1000,
             "easeInExpo"
           );
-          return false;
         }
       }
     });
@@ -79,10 +52,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav
-        className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
-        id="mainNav"
-      >
+      <nav className="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div className="container">
           <button
             className="navbar-toggler collapsed"
@@ -97,38 +67,27 @@ class Navbar extends React.Component {
             <span></span>
             <span></span>
           </button>
-          <div
-            className="navbar-collapse collapse justify-content-end"
-            id="navbarDefault"
-          >
+          <div className="navbar-collapse collapse justify-content-end" id="navbarDefault">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#home">
-                  Home
-                </a>
+                <a className="nav-link js-scroll" href="#home">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#about">
-                  About
-                </a>
+                <a className="nav-link js-scroll" href="#about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#work">
-                  Work
-                </a>
+                <a className="nav-link js-scroll" href="#work">Work</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#contact">
-                  Contact
-                </a>
+                <a className="nav-link js-scroll" href="#contact">Contact</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href={resume}>
-                  Resume
+                <a className="nav-link js-scroll" href={resume}>Resume</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll" href="https://adityakhowalgithub.github.io/nodeWEBsite/" target="_blank" rel="noopener noreferrer">
+                  New Website (in development)
                 </a>
-                {/* <Link className="nav-link js-scroll" to={"./resume"}>
-                Dashboard
-              </Link> */}
               </li>
             </ul>
           </div>
@@ -139,3 +98,4 @@ class Navbar extends React.Component {
 }
 
 export default Navbar;
+
