@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.fcbf60d0.chunk.css",
-    "main.js": "/website/static/js/main.4900b6aa.chunk.js",
-    "main.js.map": "/website/static/js/main.4900b6aa.chunk.js.map",
+    "main.css": "/website/static/css/main.522e5901.chunk.css",
+    "main.js": "/website/static/js/main.141c7d43.chunk.js",
+    "main.js.map": "/website/static/js/main.141c7d43.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.08ac27eb.js",
     "runtime-main.js.map": "/website/static/js/runtime-main.08ac27eb.js.map",
-    "static/css/2.a417cd58.chunk.css": "/website/static/css/2.a417cd58.chunk.css",
-    "static/js/2.1d44fa90.chunk.js": "/website/static/js/2.1d44fa90.chunk.js",
-    "static/js/2.1d44fa90.chunk.js.map": "/website/static/js/2.1d44fa90.chunk.js.map",
+    "static/css/2.01d557b6.chunk.css": "/website/static/css/2.01d557b6.chunk.css",
+    "static/js/2.beaf1bb2.chunk.js": "/website/static/js/2.beaf1bb2.chunk.js",
+    "static/js/2.beaf1bb2.chunk.js.map": "/website/static/js/2.beaf1bb2.chunk.js.map",
     "index.html": "/website/index.html",
-    "precache-manifest.22c8e1ebd5bde2dccd1147c017974fa5.js": "/website/precache-manifest.22c8e1ebd5bde2dccd1147c017974fa5.js",
+    "precache-manifest.91dc573388dc70c88693bc3579655969.js": "/website/precache-manifest.91dc573388dc70c88693bc3579655969.js",
     "service-worker.js": "/website/service-worker.js",
-    "static/css/2.a417cd58.chunk.css.map": "/website/static/css/2.a417cd58.chunk.css.map",
-    "static/css/main.fcbf60d0.chunk.css.map": "/website/static/css/main.fcbf60d0.chunk.css.map",
-    "static/js/2.1d44fa90.chunk.js.LICENSE.txt": "/website/static/js/2.1d44fa90.chunk.js.LICENSE.txt",
+    "static/css/2.01d557b6.chunk.css.map": "/website/static/css/2.01d557b6.chunk.css.map",
+    "static/css/main.522e5901.chunk.css.map": "/website/static/css/main.522e5901.chunk.css.map",
+    "static/js/2.beaf1bb2.chunk.js.LICENSE.txt": "/website/static/js/2.beaf1bb2.chunk.js.LICENSE.txt",
+    "static/media/Aditya_khowal_resume.pdf": "/website/static/media/Aditya_khowal_resume.8c0de003.pdf",
     "static/media/ResumeMarch5.pdf": "/website/static/media/ResumeMarch5.027135f2.pdf",
     "static/media/font-awesome.css": "/website/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/image1.jpeg": "/website/static/media/image1.a47fbb7d.jpeg",
@@ -25,9 +26,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.08ac27eb.js",
-    "static/css/2.a417cd58.chunk.css",
-    "static/js/2.1d44fa90.chunk.js",
-    "static/css/main.fcbf60d0.chunk.css",
-    "static/js/main.4900b6aa.chunk.js"
+    "static/css/2.01d557b6.chunk.css",
+    "static/js/2.beaf1bb2.chunk.js",
+    "static/css/main.522e5901.chunk.css",
+    "static/js/main.141c7d43.chunk.js"
   ]
 }
